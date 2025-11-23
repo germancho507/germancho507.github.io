@@ -1,0 +1,302 @@
+/* Archivo: styles.css */
+
+/* === 1. Variables de Color y Estilos Generales === */
+:root {
+    --color-primary: #10b981;    /* Esmeralda 500 */
+    --color-secondary: #059669;  /* Esmeralda 600 (Hover) */
+    --color-background: #1f2937; /* Gris Oscuro 800 */
+    --color-text: #f3f4f6;       /* Gris Claro 100 */
+    --color-darker-bg: #111827;  /* Gris 900 para secciones */
+    --color-gray-text: #9ca3af;  /* Gris 400 */
+}
+
+body {
+    font-family: 'Inter', sans-serif, Arial;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+/* === 2. Navbar (Header) === */
+header {
+    background-color: rgba(31, 41, 55, 0.95);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+/* === 3. Estilo de Botón Primario === */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-background) !important;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    margin-top: 1.5rem;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secondary);
+    transform: scale(1.03);
+}
+
+/* === 4. Estilos de Secciones y Hero === */
+section {
+    padding: 6rem 0;
+    border-top: 1px solid #374151;
+}
+
+#galeria {
+    background-color: var(--color-darker-bg);
+}
+
+#inicio {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+
+#inicio h2 {
+    font-size: 3.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+#inicio p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05); /* Efecto Glassmorphism simple */
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    color: var(--color-gray-text);
+}
+
+
+/* === 5. Galería de Productos (Grid) === */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.gallery-card {
+    background-color: var(--color-background);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(16, 185, 129, 0.5);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1.5rem;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    flex-grow: 1;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.card-header h3 {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.price {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+.card-detail {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-detail p {
+    margin: 0.25rem 0;
+    color: var(--color-gray-text);
+}
+
+/* === 6. Sobre el Artista (2 Columnas) === */
+#artista .content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#artista .content-grid > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+#artista h2 {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#artista p.lead {
+    font-size: 1.15rem;
+    color: var(--color-gray-text);
+    margin-bottom: 1.5rem;
+}
+
+/* === 7. Contacto (3 Columnas) === */
+#contacto {
+    text-align: center;
+}
+
+#contacto h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.contact-card {
+    background-color: var(--color-background);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.contact-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+/* === 8. Footer === */
+footer {
+    background-color: var(--color-darker-bg);
+    padding: 3rem 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h4 {
+    color: white;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.copyright-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #4b5563;
+    font-size: 0.8rem;
+}

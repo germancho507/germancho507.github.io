@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NAMREG | PINTURAS CON STYLE</title>
+    <!-- Carga de Tailwind CSS para estilos modernos y responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Configuración de color para Tailwind (gris oscuro, negro y acentos dorados) */
+        :root {
+            --color-primary: #ca8a04; /* Amarillo Ocre (Amber 600) */
+            --color-secondary: #eab308; /* Amarillo Brillante (Amber 500) */
+            --color-background: #202020; /* Fondo Negro Profundo */
+            --color-surface: #4d4b50; /* Superficie/Tarjetas Oscuras */
+            --color-text: #e5e5e5; /* Texto principal */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            scroll-behavior: smooth;
+        }
+
+        /* Estilo para el efecto de sombra sutil en las tarjetas */
+        .shadow-conceptual {
+            box-shadow: 0 4px 15px rgba(202, 138, 4, 0.15), 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Ocultar las listas por defecto para simular el carrusel (el JS sería necesario para la funcionalidad) */
+        #carrusel-ideas ul li {
+            display: none;
+        }
+        /* Mostrar solo el primer elemento de la lista para la vista estática del carrusel */
+        #carrusel-ideas ul li:first-child {
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- HEADER & NAVBAR -->
+    <header class="sticky top-0 bg-surface/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold tracking-widest text-white-600">
+                NAMREG ART
+            </h1>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6 text-sm font-medium">
+                    <li><a href="#inicio" class="text-gray-300 hover:text-amber-500 transition duration-300">Inicio</a></li>
+                    <li><a href="galeria.html" class="text-gray-300 hover:text-amber-500 transition duration-300">Galeria</a></li>
+                    <li><a href="#bio" class="text-gray-300 hover:text-amber-500 transition duration-300">El Artista</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Placeholder -->
+            <div class="md:hidden text-amber-600">
+                <!-- Icono de Menú simple (si fuera necesario JS para el toggle) -->
+                MENU
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. SECCIÓN DE INICIO / PRESENTACIÓN (HERO) -->
+        <section id="inicio" class="relative py-24 md:py-36 text-center overflow-hidden">
+    
+    <div class="absolute inset-0 w-full h-full carrusel-fondo">
+        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\LOGO\ssa.jpg" alt="Fondo 1" class="carrusel-imagen">
+    </div>
+    
+    <div class="absolute inset-0 bg-black/90"></div> 
+    
+    <div class="max-w-5xl mx-auto px-4 relative z-10"> 
+        <p class="text-xs tracking-widest uppercase text-amber-500 mb-2 font-semibold">PINTURAS Y DIBUJOS</p>
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-white">
+            NAMREG
+        </h2>
+        <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto">
+            <strong>ARTES NAMREG,</strong> una marca personal de arte que impacta en la visualización, el estilo y la originalidad en cada obra 
+        </p>
+        <a href="galeria.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-amber-600 hover:bg-amber-700">GALERIA</a>
+    </div>
+</section>
+        
+
+
+        
+        <section id="carrusel-ideas" class="py-20 md:py-32 bg-background">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center text-white">SOBRE MI PROYECTO</h2>
+        <p class="text-center text-gray-400 mb-12">Mi proyecto contiene una selección de Pinturas en técnica acrílica, originales, únicas e irrepetibles.</p>
+        <p style="text-align: justify text-gray mb-12">Hoy en día, el arte puede ser conceptual, 
+            realista entre diversas formas de arte, las cuales se nos puede dar la oportunidad 
+            de ingresar al mundo del arte, en lo que a mí respecta el arte ha jugado un papel 
+            fundamental para poder expresarme, poder desahogarme y poder recordar vivencias, 
+            en el arte eh aprendido diversas técnicas, eh creado desde mis gustos pinturas de autos, 
+            animales y personas, pasando por lo caricaturesco en el cual encontré un refugio para poder 
+            representar mis gustos, llevándolos a lo físico, hoy en día utilizo esta técnica, de arte,
+             tipo caricaturesco, pero llevado a un tono más realista y conceptual. El emprendimiento, 
+             artes NAMREG inicio en el año 2015, BREÑÒN CHIRIQUÌ, Distrito de RENACIMIENTO, cuando por 
+             medio de una idea de llevar mi arte a muchos lados y de plasmar mi arte en cuadros de 
+             madera, empezó esta idea de negocios, el arte ya no era solo para mi sino también para 
+             poder llevarlo a diferentes partes en mini cuadros, utilizando pedazos de madera, los 
+             cuales pueden durar muchos años y ser tomados como partes decorativas, como recordatorios 
+             o ser parte de piezas únicas e irrepetibles, estos cuadros llevan un proceso de corte, 
+             lijado y curado, para que así la madera pueda perdurar a lo largo de los años. </p>
+             <br>
+             <br>
+        <div class="max-w-4xl mx-auto shadow-conceptual rounded-xl overflow-hidden bg-amber-900 border border-amber-700">
+            
+           
+            <table class="w-full text-left text-sm text-white">
+                <thead class="text-xs uppercase bg-amber-800 text-white">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 w-1/4">
+                            logo
+                        </th>
+                        <th scope="col" class="px-6 py-3 w-1/4">
+                            Título del Proyecto
+                        </th>
+                        <th scope="col" class="px-6 py-3 w-1/2">
+                            Descripción del proyecto
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-amber-700 bg-amber-700 hover:bg-amber-600">
+                        <td class="px-6 py-4">
+                            <figure>
+                                <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\LOGO\LOGO.PNG" alt="imagen destacada de mi logo personal" class="w-full h-auto rounded-lg border border-amber-600">
+                                <figcaption class="mt-2 text-xs text-amber-300 italic">LOGO DEL EMPRENDIMIENTO DE ARTES NAMREG</figcaption>
+                            </figure>
+                        </td>
+                        <td class="px-6 py-4 font-semibold text-white align-top">
+                            El Proyecto de ventas de ARTES NAMREG
+                        </td>
+                        <td class="px-6 py-4 align-top">
+                            <p class="text-white mb-2"><strong>Concepto:</strong> El emprendimiento, artes NAMREG inicio en el año 2015, Breñòn, Chiriquì, Distrito de Renacimiento.</p>
+                            <p class="text-amber-200 text-xs mt-2">Basado en el estudio de Comercio electronico y Gestiòn de proyectos, clases impartidas por la profesora: Mixela Guerra, CRUTA, UNACHI 2025.</p>
+                            <p class="text-amber-200 text-xs mt-2">El proyecto, es basado en la obtención de nuevas experiencias y de paso la obtención de recursos, en este proyecto se crea una fuente de ingresos bastante escalable a largo plazo, ya que es un modelo de negocios altamente exportable, con el público correcto podemos obtener mejores ganancias.  </p>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+
+        
+        <!-- 3. SECCIÓN MINI-GALERÍA / VISTA PREVIA (Grid de Imágenes) -->
+        <section id="galeria-preview" class="py-20 md:py-32 bg-surface border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                    MINI GALERIA
+                </h2>
+                <p class="text-center text-gray-400 mb-12">Un muestrario rápido de cuadros y piezas disponibles.</p>
+                
+                <!-- GRID DE MINI-GALERÍA -->
+                <div class="mini-gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Bloque 1 -->
+                    <div class="bg-surface">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\galeria-arte\a3.jpg" alt="Vista previa de Escultura Pequeña." class="w-full object-cover h-64">
+                        <div class="p-6 text-center">
+                            <p class="text-lg font-semibold mb-2">ARTE PANAMEÑO</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm">comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- Bloque 2 -->
+                    <div class="bg-surface">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\galeria-arte\a2.jpg" alt="Vista previa de Arte Digital Abstracto." class="w-full object-cover h-64">
+                        <div class="p-6 text-center">
+                            <p class="text-lg font-semibold mb-2"></p>
+                            <p class="text-lg font-semibold mb-2">PAISAJISMO</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm">comprar</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Bloque 3 -->
+                    <div class="bg-surface">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\galeria-arte\a1.jpg" alt="Vista previa de Collage Mixto." class="w-full object-cover h-64">
+                        <div class="p-6 text-center">
+                            <p class="text-lg font-semibold mb-2">QUETZAL</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm">comprar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-16">
+                    <a href="galeria.html" class="btn-primary text-base">Explorar la Galería Completa</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. SECCIÓN BIO Y CONTACTO -->
+        <section id="bio" class="py-20 md:py-32 bg-background border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Columna de Imagen (Placeholder) -->
+                <div class="order-2 md:order-1">
+                    <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\LOGO\mia.jpg" alt="Retrato o Imagen del Estudio de Elias Vance." class="w-full h-auto rounded-xl shadow-conceptual border border-gray-800">
+                </div>
+                
+                <!-- Columna de Texto -->
+                <div class="order-1 md:order-2">
+                    <p class="text-xs tracking-widest uppercase text-amber-500 mb-2 font-semibold">EL ARTISTA</p>
+                    <h2 class="text-4xl font-bold mb-6 text-white">
+                        German Espinoza: desde mi punto de vista
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-6">
+                        Originario de Chiriquì, Panamà, German Espinoza se ha dedicado desde joven a realizar pinturas y dibujos desde sus conocimientos, autoentendimiento del funcionamiento de los colores y su perspectiva del mismo.
+                    </p>
+                    <ul class="space-y-3 text-gray-300 list-disc list-inside">
+                        <li>Uso de materiales reciclados de pallets.</li>
+                        <li>Exploración de tipos de artes para lograr estilos diferentes y unicos.</li>
+                        <li>Influencias del arte caricaturezco y paisajismo.</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="btn-primary text-sm text-yellow-500 mt-8">Hablemos de Arte</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 5. SECCIÓN DE CONTACTO -->
+        <section id="contacto" class="py-20 md:py-32 bg-surface border-t border-gray-800 text-center">
+            <div class="max-w-xl mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-4 text-white">
+                    Conéctate, Encarga y colabora
+                </h2>
+                <p class="text-gray-400 text-lg mb-8">
+                    Estoy disponible para encargos y proyectos de colaboración. Envíame un mensaje.
+                </p>
+                
+                <address class="space-y-4 not-italic mb-12">
+                    <p class="text-xl text-amber-500 font-medium">
+                    <a href="mailto:hpkiara30@gmail.com"> CORREO - GMAIL</a>
+                    </p>
+                    <p class="text-gray-400">
+                        <a href="https://www.instagram.com/germancho__03?igsh=MWpydWs0Yzd5aW5jbg==" target="_blank" class="hover:text-amber-400 transition">Instagram: @Germancho_03</a>
+                    </p>
+                </address>
+
+                <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="btn-primary text-base">Enviar Solicitud de Encargo Personalizado</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap text-sm text-gray-500">
+            <p>&copy; 2025 GermanEspinoza CRUTA-UNACHI Todos los derechos reservados.</p>
+            <nav class="mt-4 md:mt-0 space-x-4">
+
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

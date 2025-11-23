@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Completa | NAMREG</title>
+    <!-- Carga de Tailwind CSS y fuente Inter -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Configuración de color idéntica a la página de inicio */
+        :root {
+            --color-primary: #0453ca; /* Amarillo Ocre (Amber 600) */
+            --color-secondary: #0890ea; /* Amarillo Brillante (Amber 500) */
+            --color-background: #202020; /* Fondo Negro Profundo */
+            --color-surface: #4d4b50; /* Superficie/Tarjetas Oscuras */
+            --color-text: #e5e5e5; /* Texto principal */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            scroll-behavior: smooth;
+        }
+
+        /* Estilo para el efecto de sombra sutil en las tarjetas de la galería */
+        .shadow-conceptual {
+            box-shadow: 0 4px 15px rgba(202, 138, 4, 0.15), 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- HEADER & NAVBAR (Idéntico al index.html) -->
+        <header class="sticky top-0 bg-surface/95 backdrop-blur-sm z-50 border-b border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                <h1 class="text-2xl font-extrabold tracking-widest text-white">
+                NAMREG ARTS 
+                </h1>
+            
+             <!-- Desktop Navigation -->
+              <nav class="hidden md:block">
+                  <ul class="flex space-x-6 text-sm font-medium">
+                    <!-- Enlaces actualizados para navegación interna y externa -->
+                      <li><a href="index.html" class="text-gray-300 hover:text-amber-500 transition duration-300">Inicio</a></li>
+                      <li><a href="#galeria-main" class="text-amber-500 font-bold border-b-2 border-amber-600">Galería</a></li>
+                    </ul>
+                    </nav>
+            
+            <!-- Mobile Menu Placeholder -->
+            <div class="md:hidden text-amber-600">
+                <a href="index.html" class="hover:text-amber-500">INICIO</a>
+            </div>
+            </div>
+        </header>
+
+    <main>
+        <!-- SECCIÓN PRINCIPAL DE LA GALERÍA -->
+        <section id="galeria-main" class="py-16 md:py-24 bg-background">
+             <div class="max-w-7xl mx-auto px-4">
+                
+            <header class="text-center mb-16 bg-black p-8 rounded-lg shadow-xl">
+
+                <h2 class="text-xs tracking-widest uppercase text-amber-500 mb-2 font-semibold">COLECCIÓN DE ARTE PERSONALIZADA</h2>
+                <p class="text-3xl font-extrabold text-white mt-4 max-w-3xl mx-auto">ECHALE UN VISTAZO</p>
+                <p class="text-xl text-gray-400 mt-4 max-w-3xl mx-auto">Una muestra de mis obras conceptuales.</p>
+            </header>
+                
+
+                <!-- GRID DE LA GALERÍA -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    
+                    <!-- Tarjeta de Obra 1 (Escultura) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\IMAGENES\A1.JPG" alt="Escultura: El Cronolito Estático" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">LUCHAR SIEMPRE</h3>
+                            <p class="text-sm text-gray-400 mb-3">Dibujo | ANIME | 2024</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-100 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br><a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Obra 2 (Digital) -->
+                    <article class="gallery-card">
+                        <!-- se crea una direccion para mostrar la imagen en una plantilla de tipo galeria-->
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\IMAGENES\A2.JPG" alt="Arte Digital: Ecos de Neón" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <!-- titulo de la imagen-->
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">LA TRAICIÒN</h3>
+                            <!-- Tdescricion de la imagen-->
+                            <p class="text-sm text-gray-400 mb-3">Dibujo | ANIME | 2023</p>
+                            <!-- link a redirigir para compra a whatssap -->
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <!-- salto de linea-->
+                            <br>
+                            <!-- hipervinculo para añadir nuevos articulos al carrito-->
+                            <a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Tarjeta de Obra 3 (Mixto) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\IMAGENES\A13.JPG" alt="Medios Mixtos: Mapa Fragmentado" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">NO TE RINDAS</h3>
+                            <p class="text-sm text-gray-400 mb-3">Dibujo | ANIME | 2022</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br>
+                            <a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Obra 4 (Escultura) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\IMAGENES\A4.JPG" alt="Escultura: Punto de Tensión" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">LAND CRUISER</h3>
+                            <p class="text-sm text-gray-400 mb-3">Dibujo | AUTOS | 2024</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br><a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Tarjeta de Obra 5 (Digital) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\IMAGENES\A5.JPG" alt="Arte Digital: Arquitectura 404" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">LA REINA</h3>
+                            <p class="text-sm text-gray-400 mb-3">Dibujo | RETRATO | 2023</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br><a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Tarjeta de Obra 6 (Collage) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\IMAGENES\A6.JPG" alt="Medios Mixtos: Abstracción Urbana" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">VIVE EL MOMENTO</h3>
+                            <p class="text-sm text-gray-400 mb-3">Dibujo | RETRATO | 2022</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br><a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Obra 7 (Escultura) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\IMAGENES\A7.JPG" alt="Escultura: Anomalía de Gravedad" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">SOLO UNA MIRADA</h3>
+                            <p class="text-sm text-gray-400 mb-3">Dibujo | CONCEPTUAL | 2023</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br><a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Obra 8 (Digital) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\IMAGENES\A11.JPG" alt="Arte Digital: El Portal" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">COKET</h3>
+                            <p class="text-sm text-gray-400 mb-3">Dibujo | RETRATO | 2024</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br><a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Obra 9 (Escultura) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\galeria-arte\a5.JPG" alt="Escultura: El Cronolito Estático" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">LA VISTA DEL LAGO</h3>
+                            <p class="text-sm text-gray-400 mb-3">Acrilico | TIPO VAN GOGH | 2025</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br><a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                            <br><h2 class= "hover:text-white-500 text-amber-500"> $15.00</h2>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta de Obra 10 (Escultura) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\galeria-arte\a2.JPG" alt="Escultura: El Cronolito Estático" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">LA PERSPECTIVA DEL DESCANSO</h3>
+                            <p class="text-sm text-gray-400 mb-3">Acrilico | REALISTA CONCEPTUAL | 2025</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br><a href="carrito.html"class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                            <br><h2 class= "hover:text-white-500 text-amber-500"> $20.00</h2>
+                        </div>
+                    </article>
+
+                     <!-- Tarjeta de Obra 11 (Escultura) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\galeria-arte\a3.JPG" alt="Escultura: El Cronolito Estático" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">PATRIOTICO</h3>
+                            <p class="text-sm text-gray-400 mb-3">Acrilico | CONCEPTUAL | 2025</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium">comprar por whatssap &rarr;</a>
+                            <br><a href="carrito.html" class= "hover:text-amber-100 text-amber-500"> añadir al carrito &rarr;</a>
+                            <br><h2 class= "hover:text-white-500 text-amber-500"> $5.00</h2>
+                        </div>
+                    </article>
+
+                     <!-- Tarjeta de Obra 12 (Escultura) -->
+                    <article class="gallery-card">
+                        <img src="C:\Users\hpkia\OneDrive\Escritorio\escritorio\SEM2 2025\COMERCIO ELEC\p. final\galeria-arte\a4.JPG" alt="Escultura: El Cronolito Estático" class="w-full object-cover aspect-square border-b border-gray-800">
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-1 text-amber-500">ATARDECER EN EL MUELLE</h3>
+                            <p class="text-sm text-gray-400 mb-3">Acrilico | CONCEPTUAL PANORAMICO | 2025</p>
+                            <a href="https://api.whatsapp.com/send?phone=50762124500&text=hola%2C%20artes%20NAMREG" class="text-amber-600 hover:text-amber-500 text-sm font-medium"> comprar por whatssap &rarr;</a>
+                            <br><h2 class= "hover:text-white-500 text-amber-500"> $15.00</h2>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (Idéntico al index.html) -->
+    <footer class="bg-black py-8 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap text-sm text-gray-500">
+        <p>&copy; 2025 NAMREG.ART</p>
+    </div>
+</footer>
+
+</body>
+</html>
